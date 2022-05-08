@@ -369,11 +369,11 @@ mod tests {
     use std::assert_matches::assert_matches;
     use std::fmt::Debug;
 
-    fn assert_extrinsic_err<T: Debug>(result: Result<T, RpcClientError>, msg: &str) {
-        assert_matches!(result.unwrap_err(), RpcClientError::Extrinsic(
-			m,
-		) if &m == msg)
-    }
+    // fn assert_extrinsic_err<T: Debug>(result: Result<T, RpcClientError>, msg: &str) {
+    //     assert_matches!(result.unwrap_err(), RpcClientError::Extrinsic(
+	// 		m,
+	// 	) if &m == msg)
+    // }
 
     #[test]
     fn result_from_json_response_works() {
